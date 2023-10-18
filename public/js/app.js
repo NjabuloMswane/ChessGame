@@ -292,11 +292,13 @@ multiPlayerEl.addEventListener('click', (e) => {
         draggable: false,   //Initially
         position: 'start',
         onDrop: onDrop,
-        orientation: 'white'
+        orientation: 'black'
     }
 })
 
 const applyColorScheme = (black, white) => {
+    black = "#58AC8A";
+    white = "#FFFFFF";
     const blackEl = document.querySelectorAll('.black-3c85d');
     for (var i = 0; i < blackEl.length; i++) {
         blackEl[i].style.backgroundColor = black;
